@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'title';
+    src: url(../fonts/420-CAI978.ttf),
+    url(../fonts/420-CAI978.eot);
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url(../fonts/tt0802m_.ttf),
+    url(../fonts/tt0802m_.eot);
+}
+
+@font-face {
+    font-family: 'nor';
+    src: url(../fonts/2.ttf),
+    url(../fonts/2.eot);
+}
+
+.fonttitle{
+    font-family: 'title';
+    font-size: 60px;
+}
+
+.fontmy{
+    font-family: 'title' !important;
+    font-size: 20px;
+}
+
+.fontm{
+    font-family: 'title' !important;
+    font-size: 30px;
+}
+
+.fontnav{
+    font-size: 10px;
+}
+
+@media print {
+
+    .navbar {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    a {
+        display: none;
+    }
+}
+
+.change:hover {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.header1 {
+    width: 100%;
+    color: #fff;
+    height: 400px;
+    letter-spacing: .6px;
+    font-size: 14px;
+    z-index: 30;
+    background-image: url(../img/sweet-ice-cream.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.colorb {
+    color: white;
+}
+
+.colorb:hover {
+    color: #669999;
+}
+
+.coloro {
+    color: white;
+}
+
+.coloro:hover {
+    color:cadetblue;
+}
+
+
+.trans {
+    -webkit-transition: all 0.6s;
+    transition: all 0.6s;
+}
+
+.up {
+    margin-top: 20px;
+}
+
+.mzero {
+    margin-bottom: 0px !important;
+}
+
+.up-max {
+    margin-top: 30px;
+}
+
+.up-m {
+    margin-top: 60px;
+}
+
+.mleft {
+    margin-left: 15px;
+}
+.mright {
+    margin-right: 15px;
+}
+
+.down {
+    margin-bottom: 20px;
+}
+
+.dele {
+    text-decoration: line-through;
+}
+
+.backimg {
+    background-color: rgba(0,0,0,.1);
+/*    background-image: url(../img/benjamin.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.backcolor{
+    background-color: whitesmoke;
+}
+.postcolor{
+    background-color: white;
+}
+.height{
+    height: 500px;
+}
+
+.backcol{
+    background-color: rgba(0,0,0,0) !important;
+    
+}
+
+.blackcol{
+    background-color: rgba(0,0,0,.7) !important;
+    
+}
+
+.backcol:hover {
+    background-color: rgba(0,0,0,0);
+    
+}
+
+.bodercol{
+      border-color: rgba(0,0,0,0) !important;
+}
+
+.big{
+    font-size: 35px;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+.welcome{
+  height:600px;
+}
+
+.siz{
+    font-size:30px !important
+    line-height:15px;
+}

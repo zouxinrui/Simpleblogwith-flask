@@ -1,0 +1,58 @@
+{% extends 'base/base.html' %}
+{% block head %}
+    <div class="col-md-3"></div>
+    <div class="col-md-6 up-m">
+        <center>
+                <h1 class="fonttitle">Login</h1>
+        </center>
+           </div>
+    <div class="col-md-3"></div>
+{% endblock %}
+{% block info %}
+    <nav class="mzero alert alert-warning">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            We use cookies to provide social media features and ensure the best browsing experience. By conrinuing to
+            browse the site you are agreeing to our use of cookies. <a href="/cookies">Details here</a>
+    </nav>
+{% endblock %}
+{% block content %}
+
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 backcolor height up-max">
+    <div>
+     <h1>Login</h1>
+    <p>New for us?<a href="{{ url_for('.register') }}"> Register here!</a></p>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+          <h4>Username</h4>
+           <p>
+            {{ form.username(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br>
+            {% for error in form.username.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+
+        </p>
+       <h4>Password</h4>
+           <p>
+            {{ form.password(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br>
+            {% for error in form.password.errors %}
+                <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+
+        </p>
+        <p>{{ form.remember_me(onClick="rec()") }} Remmber me</p>
+
+        <p><input type="submit" class="btn btn-default" value="Login"></p>
+    </form>
+    </div>
+</div>
+<div class="col-sm-4"></div>
+{% endblock %}
+{% block js %}
+    <script type="text/javascript">
+    function rec(){
+        var mychar= "The website need to use your cookies"
+        alert(mychar)
+    }
+    </script>
+{% endblock %}

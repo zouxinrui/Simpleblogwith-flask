@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+{% block head %}
+    <div class="col-md-3"></div>
+    <div class="col-md-6 up-m">
+        <center>
+                <h1 class="fonttitle">Edit Profile</h1>
+        </center>
+           </div>
+    <div class="col-md-3"></div>
+{% endblock %}
+{% block content %}
+     <div class="container-fluid up">
+        <div class="col-md-4"></div>
+        <div class="col-md-4  backcolor">
+            <div class="container-fluid up down">
+                            <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.username.label }}<br>
+            {{ form.username(class_='form-control') }}<br>
+            {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p>
+            {{ form.about_me.label }}<br>
+            {{ form.about_me(class_='form-control',rows = "5") }}<br>
+            {% for error in form.about_me.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+        <p><input type="submit" class="btn btn-default" value="Submit"></p>
+        <br>
+        </form>
+                <a href="/user/password">
+                    <span class="trans glyphicon glyphicon-wrench text-right"> Edit-password</span>
+                </a>
+
+            </div>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+
+{% endblock %}

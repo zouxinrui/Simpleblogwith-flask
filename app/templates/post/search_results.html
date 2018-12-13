@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+{% block head %}
+    <div class="col-md-3"></div>
+    <div class="col-md-6 up-m">
+        <center>
+                <h1 class="fonttitle">Searching</h1>
+            <p class="fontm">KeyWord: "{{query}}"</p>
+        </center>
+           </div>
+    <div class="col-md-3"></div>
+{% endblock %}
+{% block content %}
+<div class="col-md-3"></div>
+<div class="col-md-6">
+    {% if results %}
+    {% for post in results %}
+  <div class="container-fluid postcolor up">
+           <div class="container-fluid">
+            <div class="row mleft mright">
+                <div class="col-lg-12">
+                    <h2>{{ post.title }}</h2>
+                    <p>author: <a href="{{ url_for('main.user', username=post.author.username,page=1) }}">{{ post.author.username }}</a>
+                        | {{momentjs(post.timestamp).format('LLLL')}}</p>
+                    <hr>
+                </div>
+            </div>
+            <div class="row down mleft mright">
+                <div class="col-lg-12">
+                    {{ post.body | truncate(225) | safe }}
+                    <br>
+                    <br>
+                    <!-- Set the link for read more -->
+            </div>
+                <div class="col-lg-12">
+               <p class="text-right"> <a href="{{
+          url_for('main.post', post_id=post.id)
+          }}" class="btn btn-default">Read More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    <div class="container-fluid">
+        <center><h3>No results here</h3></center>
+    </div>
+    {% endif %}
+    </div>
+<div class="col-md-3"></div>
+{% endblock %}
