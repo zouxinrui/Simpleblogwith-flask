@@ -253,7 +253,7 @@ def delete_post(id):
     flash("Delete succss!")
     # log information
     current_app.logger.info('"%s" has deleted post "%s"', current_user.username, post.title)
-    return redirect(url_for(".user",username=current_user.username))
+    return redirect(url_for(".user",username=current_user.username,page=1))
 
 
 def sidebar_data():

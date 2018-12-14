@@ -16,10 +16,12 @@
             <div class="col-lg-1"></div>
             <div class="col-lg-10 up">
                 <h2>{{ post.title }}</h2>
-                {{momentjs(post.timestamp).format('LLLL')}}</div>
+                {{momentjs(post.timestamp).format('LLLL')}}
+            <hr>
+            </div>
             <div class="col-lg-1"></div>
         </div>
-        <div class="row down mleft mright backcolor">
+        <div class="row down mleft mright backcolor pdown">
             <div class="col-lg-1"></div>
             <div class="col-lg-10 down">
                 {{ post.body | safe }}
@@ -31,6 +33,7 @@
             <div class="col-md-1"></div>
             <div class="col-md-10">
             <h2>Comments</h2>
+            <br>
             <div class="container-fluid">
             {% for comment in comments %}
                 <p><img src="{{ comment.user.avatar(32) }}">
@@ -42,20 +45,23 @@
             <hr>
 
             <h3>New Comment:</h3>
+                <br>
             <div class="container-fluid down">
             <!-- Set the form -->
             {% if current_user.is_authenticated %}
             <form method="POST" action="#">
                 {{ form.hidden_tag() }}
                 <div class="form-group">
-                    {{ form.text.label }} {% if form.text.errors %} {% for e in form.text.errors %}
+                    {% if form.text.errors %} {% for e in form.text.errors %}
                     <p class="help-block">{{ e }}</p>
                     {% endfor %} {% endif %} {{ form.text(class_='form-control',rows_="3") }}
                 </div>
                 <p><input class="btn btn-default" type="submit" value="Add Comment"></p>
             </form>
             {% else %}
-            <p>login need</p>
+                <div class="container-fluid up down mleft mright">
+            <center><h4 class="fontm">login need</h4></center>
+              </div>
             {% endif %}
         </div>
         </div>

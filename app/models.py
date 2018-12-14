@@ -30,13 +30,13 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64),index=True,unique=True)
     email = db.Column(db.String(100),index=True,unique=True)
     password_hash = db.Column(db.String(128))
-    posts = db.relationship('Post',backref='author',lazy='dynamic', cascade="all, delete-orphan",
-                            passive_deletes=True)
+    posts = db.relationship('Post',backref='author',lazy='dynamic', cascade="all, delete-orphan"
+                            )
     roles = db.relationship('Role', secondary="userroles",backref = db.backref('users', lazy='dynamic'))
     comments = db.relationship(
         'Comment',
         backref='user',
-        lazy='dynamic', cascade="all, delete, delete-orphan", passive_deletes = True)
+        lazy='dynamic', cascade="all, delete, delete-orphan")
 
     def __repr__(self):
         return 'User:{}'.format(self.username)
@@ -64,9 +64,6 @@ class Tag(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
 
-    # def __init__(self, name):
-    #     self.name = name
-
     def __repr__(self):
         return "Model Tag: `{}`".format(self.name)
 
@@ -83,7 +80,7 @@ class Post(db.Model):
     comments = db.relationship(
         'Comment',
         backref='posts',
-        lazy='dynamic', cascade="all, delete-orphan", passive_deletes=True)
+        lazy='dynamic', cascade="all, delete-orphan")
     tags = db.relationship(
         'Tag',
         secondary=posts_tags,

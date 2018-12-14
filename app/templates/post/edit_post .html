@@ -11,7 +11,8 @@
 {% block content %}
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<div class="container-fluid backcolor up down">
+<div class="container-fluid backcolor up down ">
+    <div class="container-fluid mleft mright down">
     <h1 class="text-center">Edit the exist post</h1>
     <form method="POST" action="{{ url_for('main.edit_post', id=post.id) }}">
         {{ form.hidden_tag() }}
@@ -27,7 +28,7 @@
             <p class="help-block">{{ e }}</p>
             {% endfor %}
             {% endif %}
-            {{ form.tags(class_='form-control',id="sel_menu2", multiple="multiple") }}
+            {{ form.tags(class_='form-control selectpicker',title="Choose tag") }}
         </div>
         <div class="form-gruop">
             {{ form.body.label }} 
@@ -36,27 +37,25 @@
             <p class="help-block">{{ e }}</p>
             {% endfor %}
             {% endif %}
-            {{ form.body(id="editor", class_='form-contril') }}
+            {{ form.body(id="editor", class_='form-control') }}
         </div>
         <br>
         <p><input class="btn btn-default" type="submit" value="Submit"></p>
     </form>
+        </div>
 </div>
 </div>
 <div class="col-md-3"></div>
 {% endblock %}
 {% block js %}
 	<script src="//cdn.ckeditor.com/4.4.6/standard/ckeditor.js"></script>
+<script src="/static/js/jquery-2.0.3.min.js"></script>
     <script type="text/javascript">
         window.onload = function() {
             CKEDITOR.replace('editor', {
                 filebrowserUploadUrl: '/ckupload/',
             });
         };
-        $("#sel_menu2").select2({
-        tags: true,
-        maximumSelectionLength: 3
-    });
     </script>
 {% endblock %}
 

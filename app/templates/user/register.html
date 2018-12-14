@@ -12,30 +12,32 @@
 <div class="container-fluid">
 <div class="col-md-4">
 </div>
-<div class="col-md-4 backcolor up-max">
+<div class="col-md-4 backcolor up-max pleft pright pdown">
+    <div class="container-fluid down">
     <h1>SignUP</h1>
     <form action="" method="post">
 
         {{ form.hidden_tag() }}
-        <p>
-            Username<br> {{ form.username(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.username.errors %}
-            <span style="color: red;">[{{ error }}]</span> {% endfor %}
-        </p>
-        <p>
-            Email<br> {{ form.email(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.email.errors %}
-            <span style="color: red;">[{{ error }}]</span> {% endfor %}
-        </p>
-        <p>
-            Password<br> {{ form.password(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.password.errors %}
-            <span style="color: red;">[{{ error }}]</span> {% endfor %}
-        </p>
-        <p>
-            Repeat Password<br> {{ form.password2(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.password2.errors %}
-            <span style="color: red;">[{{ error }}]</span> {% endfor %}
-        </p>
-        <p><input type="submit" class="btn btn-default" value="JoinUs"></p>
 
-</form>
+            <h4>Username</h4> <p>{{ form.username(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.username.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+
+            <h4>Email</h4> <p>{{ form.email(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.email.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+
+        <h4> Password</h4> <p>{{ form.password(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.password.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+
+        <h4>Repeat Password</h4><p> {{ form.password2(size=40,cols='80',class_='form-control',placeholder="Input here") }}<br> {% for error in form.password2.errors %}
+            <span style="color: red;">[{{ error }}]</span> {% endfor %}
+        </p>
+        <p><input type="submit" class="btn btn-default" value="Join Us"></p>
+
+        </form>
+    </div>
 </div>
 
 <div class="col-md-4"></div>

@@ -6,13 +6,12 @@
     <meta name="toTop" content="true">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script src="/static/js/jquery-3.3.1.min.js"></script>
-    <script src="/static/js/select2.js"></script>
     <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap-select.min.js"></script>
     <script type="text/javascript" src="/static/js/toTop.js"></script>
     <link rel="stylesheet" href="/static/css/print.css">
-    <script src="/static/css/select2.css"></script>
+    <link rel="stylesheet" href="/static/css/bootstrap-select.min.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-	<!--<script src="//cdn.ckeditor.com/4.4.6/standard/ckeditor.js"></script>-->
     <script src="/static/js/moment.js"></script>
     {% block js %} {% endblock %}
     {% if title %}
@@ -47,7 +46,7 @@
                 </div>
 
                 <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right fontnav">
+                    <ul class="nav navbar-nav navbar-right">
 
                         <li><a href="/new_post"><span class="glyphicon glyphicon-plus coloro trans"> New</span></a></li>
                         {% if current_user.is_anonymous %}
@@ -86,7 +85,7 @@
         {% endfor %} {% endif %} {% endwith %} {% block content %} {% endblock %}
     </div>
 <div class="container-fluid up-m">
-       <center>copyright Xinrui Zou</center>
+       <center>Copyright © Xinrui Zou</center>
 </div>
 </body>
 

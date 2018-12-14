@@ -114,6 +114,15 @@
     margin-right: 15px;
 }
 
+.pleft {
+    padding-left: 15px;
+}
+.pright{
+    padding-right:15px;
+}
+.pdown{
+    padding-bottom:15px;
+}
 .down {
     margin-bottom: 20px;
 }

@@ -11,36 +11,38 @@
 {% block content %}
 <div class="col-md-3"></div>
 <div class="col-md-6">
-<div class="container-fluid backcolor up down">
+<div class="container-fluid backcolor up down pleft pright pdown">
+    <div class="container-fluid mleft mright down">
     <h1 class="text-center">Create A New Post</h1>
     <form method="POST" action="{{ url_for('main.new_post') }}">
         {{ form.hidden_tag() }}
         <div class="form-group">
-            {{ form.title.label }} {% if form.title.errors %} {% for e in form.title.errors %}
+            <h4>Title</h4> {% if form.title.errors %} {% for e in form.title.errors %}
             <p class="help-block">{{ e }}</p>
             {% endfor %} {% endif %} {{ form.title(class_='form-control') }}
         </div>
         <div class="form-group">
-            {{ form.tags.label }}
+            <h4>Tag</h4>
             {% if form.tags.errors %}
             {% for e in tags.title.errors %}
             <p class="help-block">{{ e }}</p>
             {% endfor %}
             {% endif %}
-            {{ form.tags(class_='form-control',id="sel_menu2", multiple="multiple") }}
+            {{ form.tags(class_='form-control selectpicker',title="Choose tag") }}
         </div>
         <div class="form-gruop">
-            {{ form.body.label }} 
+            <h4>Blog Content</h4>
             {% if form.body.errors %} 
             {% for e in form.body.errors %}
             <p class="help-block">{{ e }}</p>
             {% endfor %}
             {% endif %}
-            {{ form.body(id="editor", class_='form-contril') }}
+            {{ form.body(id="editor", class_='form-control') }}
         </div>
         <br>
        <p><input type="submit" class="btn btn-default" value="Submit"></p>
     </form>
+        </div>
 </div>
 </div>
 <div class="col-md-3"></div>
@@ -53,10 +55,6 @@
                 filebrowserUploadUrl: '/ckupload/',
             });
         };
-        $("#sel_menu2").select2({
-        tags: true,
-        maximumSelectionLength: 3  //最多能够选择的个数
-    });
     </script>
 {% endblock %}
 
