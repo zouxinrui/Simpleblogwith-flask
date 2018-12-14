@@ -3,8 +3,8 @@ from wtforms.validators import ValidationError,Email,EqualTo
 from flask_wtf import FlaskForm
 from wtforms import StringField,PasswordField,BooleanField,TextAreaField, SubmitField, TextField
 from wtforms.validators import DataRequired, Length
-
 from ..models import User,Tag
+
 
 class LoginForm(FlaskForm):
     #DataRequired，当你在当前表格没有输入而直接到下一个表格时会提示你输入
@@ -32,6 +32,7 @@ class RegistrationForm(FlaskForm):
         if user is not None:
             raise ValidationError('The email has already been used!')
 
+
 class EditProfileForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired(message='Please input username')])
     about_me = TextAreaField('About me', validators=[Length(min=0, max=100)])
@@ -45,12 +46,14 @@ class PasswordForm(FlaskForm):
         'Password Repetition', validators=[DataRequired(), EqualTo('password1')])
     submit = SubmitField('Submit')
 
+
 class PostForm(FlaskForm):
     """Post Form."""
     title = StringField('Title', [DataRequired(), Length(max=255)])
     tag = [(t.id, t.name) for t in Tag.query.order_by('name')]
     tags = SelectMultipleField('Tags', coerce=int ,choices = tag)
     body = TextAreaField('Blog Content', [DataRequired()])
+
 
 class CommentForm(FlaskForm):
     """Form vaildator for comment."""

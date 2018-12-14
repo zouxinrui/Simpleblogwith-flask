@@ -30,8 +30,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64),index=True,unique=True)
     email = db.Column(db.String(100),index=True,unique=True)
     password_hash = db.Column(db.String(128))
-    posts = db.relationship('Post',backref='author',lazy='dynamic', cascade="all, delete-orphan"
-                            )
+    posts = db.relationship('Post',backref='author',lazy='dynamic', cascade="all, delete-orphan")
     roles = db.relationship('Role', secondary="userroles",backref = db.backref('users', lazy='dynamic'))
     comments = db.relationship(
         'Comment',

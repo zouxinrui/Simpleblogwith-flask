@@ -233,6 +233,7 @@ def edit_post(id):
         # Update the post
         db.session.add(post)
         db.session.commit()
+        flash ("Edit post successfully")
         # log information
         current_app.logger.info('"%s" has deleted post "%s"', current_user.username, post.title)
         return redirect(url_for('.post', post_id=post.id))

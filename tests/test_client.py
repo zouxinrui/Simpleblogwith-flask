@@ -40,8 +40,8 @@ class FlaskClientTestCase(unittest.TestCase):
             'email': '879651072@qq.com',
             'username': 'Hyman',
             'password': '456',
-            'password2': '456'})
-        self.assertFalse(response.status_code == 302)
+            'password2': '456'},follow_redirects=True)
+        self.assertFalse(re.search(b'Welcome to join', response.data))
 
     def test_register(self):
         """Register Test with long password"""
@@ -49,8 +49,8 @@ class FlaskClientTestCase(unittest.TestCase):
             'email': '879651072@qq.com',
             'username': 'Hyman',
             'password': '12345644444444445555555555555677887',
-            'password2': '12345644444444445555555555555677887'})
-        self.assertFalse(response.status_code == 302)
+            'password2': '12345644444444445555555555555677887'},follow_redirects=True)
+        self.assertFalse(re.search(b'Welcome to join', response.data))
 
     def test_register(self):
         """Register Test with correct information"""
@@ -61,16 +61,16 @@ class FlaskClientTestCase(unittest.TestCase):
             'password2': '123456'},follow_redirects=True)
         self.assertTrue(re.search(b'Welcome to join', response.data))
 
-
     def test_login_and_logout(self):
         """Login Test with correct password"""
         response = self.client.post(("/login"), data={
             'username': 'user',
-            'password': '123456'})
-        self.assertTrue(response.status_code == 302)
+            'password': '123456'},follow_redirects=True)
+        self.assertTrue(re.search(b'Recent', response.data))
+
         # only login successful can logout
-        response_logout = self.client.get("/logout")
-        self.assertTrue(response_logout.status_code == 302)
+        response_logout = self.client.get("/logout",follow_redirects=True)
+        self.assertTrue(re.search(b'Recent', response_logout.data))
 
 
 class FlaskClientAuthorityTestCase(unittest.TestCase):
@@ -110,53 +110,74 @@ class FlaskClientAuthorityTestCase(unittest.TestCase):
         db.drop_all()
         cls.app_context.pop()
 
-    def test_anou_authority(self):
+    def test_anou_01_home(self):
         """Operation without login"""
-        response = self.client.get("/")
-        self.assertTrue(response.status_code==200)
+        response = self.client.get("/", follow_redirects=True)
+        self.assertTrue(b'Recent' in response.data)
 
+    def test_anou_02_user(self):
         # enter user info page
-        response = self.client.get("/user/user/1")
+        response = self.client.get("/user/user/1", follow_redirects=True)
+        self.assertTrue(b'about me' in response.data)
 
-        self.assertTrue(response.status_code == 200)
+    def test_anou_03_admin(self):
+        # Try to access background system directly
+        response = self.client.get(("/admin"), follow_redirects=True)
+        self.assertTrue(b'You have no' in response.data)
 
-        response = self.client.get(("/admin"))
-        self.assertFalse(response.status_code == 200)
+    def test_anou_04_newpost(self):
+       # Try to get the new post page
+        response = self.client.get("/new_post", follow_redirects=True)
+        self.assertTrue(b'Login' in response.data)
 
-        response = self.client.get("/new_post")
-        self.assertFalse(response.status_code == 200)
-
+    def test_anou_05_edit(self):
         # edit profile
-        response = self.client.get("/edit_profile")
-        self.assertFalse(response.status_code == 200)
+        response = self.client.get("/edit_profile", follow_redirects=True)
+        self.assertTrue(b'Login' in response.data)
+
+    def test_anou_06_search(self):
+        # search
+        response = self.client.get("/search_results/testpost", follow_redirects=True)
+        self.assertTrue(b'testpost' in response.data)
 
     def test_user_authority(self):
         """Operate as a normal user"""
+
+        #login with wrong password
         response = self.client.post(("/login"), data={
             'username': 'user',
-            'password': '123456'})
-        self.assertTrue(response.status_code == 302)
+            'password': '456'}, follow_redirects=True)
+        self.assertFalse(re.search(b'Recent', response.data))
+
+        # login with correct password
+        response = self.client.post(("/login"), data={
+            'username': 'user',
+            'password': '123456'},follow_redirects=True)
+        self.assertTrue(re.search(b'Recent', response.data))
+
         # edit profile
         response = self.client.post(("/edit_profile"), data={
             'username': 'user',
-            'about_me': 'nothing'})
-        self.assertTrue(response.status_code == 302)
+            'about_me': 'nothing'}, follow_redirects=True)
+        self.assertTrue(re.search(b'Your profile has changed', response.data))
+
         # edit password
         response = self.client.post(("/user/password"), data={
             'password': '123456',
-            'password1': '123456',
+            'password1': '345678',
             'passwordnew': '345678'},follow_redirects=True)
         self.assertTrue(b'Login' in response.data)
+
+        # Login with correct password
         response = self.client.post(("/login"), data={
             'username': 'user',
-            'password': '345678'})
-        self.assertTrue(response.status_code == 302)
-        # normal user access admin
-        response = self.client.get(("/admin"))
-        self.assertFalse(response.status_code == 200)
-        # normal user new post
-        response = self.client.get("/new_post")
-        self.assertTrue(response.status_code == 200)
+            'password': '345678'},follow_redirects=True)
+        self.assertTrue(b'Popular Tags' in response.data)
+
+        # Try to access background system directly
+        response = self.client.get(("/admin"), follow_redirects=True)
+        self.assertTrue(b'You have no' in response.data)
+
         # normal user new post
         response = self.client.post(("/new_post"), data={
             'title': 'testpost',
@@ -164,45 +185,59 @@ class FlaskClientAuthorityTestCase(unittest.TestCase):
         self.client.post(("/new_post"), data={
             'title': 'testpost2',
             'body': 'that was amazing'}, follow_redirects=True)
+
         # admin user new post
         self.assertTrue(b'Create' in response.data)
         with self.app_context:
-            response = self.client.get("/post/1")
-        self.assertTrue(response.status_code == 200)
+            response = self.client.get("/post/1", follow_redirects=True)
+            self.assertTrue(b'testpost' in response.data)
+
         # normal user.comment.post
         with self.app_context:
             response = self.client.post(("/post/1"),data={
                 "text" : "simple code"
             },follow_redirects=True)
             self.assertTrue(b'simple code' in response.data)
-        response = self.client.get("/edit/1")
-        self.assertTrue(response.status_code == 200)
+
+        # edit post
+        response = self.client.post("/edit/1",data={
+            'title': 'testpost',
+            'body': 'simple test'}, follow_redirects=True)
+        self.assertTrue(b'simple test' in response.data)
+
         #delete one of the post
-        response = self.client.get("/delete_post/2")
-        self.assertTrue(response.status_code == 302)
-        #logout to test edit and delete
-        response_logout = self.client.get("/logout")
-        self.assertTrue(response_logout.status_code == 302)
+        response = self.client.get("/delete_post/2",follow_redirects=True)
+        self.assertTrue(b'Delete succss' in response.data)
+
        # After logout, cannot access this page
-        response = self.client.get("/edit/1")
-        self.assertFalse(response.status_code == 200)
+        self.client.get("/logout")
+        response = self.client.get("/edit/1",follow_redirects=True)
+        self.assertTrue(b'You have no' in response.data)
+
        # Try to delete without authority
-        response = self.client.get("/delete_post/1")
-        self.assertFalse(response.status_code == 200)
-
-
+        response = self.client.get("/delete_post/1",follow_redirects=True)
+        self.assertTrue(b'You have no' in response.data)
 
     def test_admin_authority(self):
         """operate as an admin"""
         response = self.client.post(("/login"), data={
             'username': 'admin',
-            'password': '123456'})
-        self.assertTrue(response.status_code == 302)
+            'password': '123456'},follow_redirects=True)
+        self.assertTrue(b'Recent' in response.data)
+
+        # access background system directly
+        response = self.client.get(("/admin"), follow_redirects=True)
+        self.assertTrue(b'Welcome' in response.data)
+
+        # access background system directly
+        response = self.client.get(("/admin/user"), follow_redirects=True)
+        self.assertTrue(b'about' in response.data)
+
         # admin user new post
-        response = self.client.get("/new_post",follow_redirects=True)
-        self.assertTrue(response.status_code == 200)
-        response_logout = self.client.get("/logout")
-        self.assertTrue(response_logout.status_code == 302)
+        response_logout = self.client.get("/logout",follow_redirects=True)
+        self.assertTrue(b'Recent' in response_logout.data)
+
+
 
 
 
