@@ -37,7 +37,8 @@ class MyAdminIndexView(AdminIndexView):
 
 class MyViewAll(ModelView):
     def after_model_delete(self, model):
-        current_app.logger.info('Admin "%s" deleted the "%s"',current_user.username, model)
+        current_app.logger.warning('Admin "%s" deleted the "%s",the related information may also be deleted',
+                                   current_user.username, model)
 
     def after_model_change(self, form, model, is_create):
         current_app.logger.info('Admin "%s" updated the "%s"', current_user.username, model)

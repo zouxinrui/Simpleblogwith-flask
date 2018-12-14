@@ -15,11 +15,6 @@ from flask_admin import Admin,AdminIndexView,expose
 from flask_whooshalchemyplus import index_all
 
 
-
-
-
-
-
 @main.route('/')
 @main.route('/index/<int:page>')
 def index(page=1):
@@ -216,6 +211,9 @@ def edit_post(id):
     """View function for edit_post."""
     post = Post.query.get_or_404(id)
     form = PostForm()
+    if current_user.is_anonymous:
+        flash("You have no authority to edit the post")
+        return redirect(url_for('.index'))
 
     if post.author.id != current_user.id:
         # log information
@@ -247,6 +245,19 @@ def edit_post(id):
 
 @main.route('/delete_post/<id>', methods=['GET'])
 def delete_post(id):
+
+    post = Post.query.get_or_404(id)
+
+    if current_user.is_anonymous:
+        flash("You have no authority to edit the post")
+        return redirect(url_for('.index'))
+
+    if post.author.id != current_user.id:
+        # log information
+        current_app.logger.warning('"%s" tried to delete post "%s" with no authority', current_user.username, post.title)
+        flash ("You have no authority to edit")
+        return redirect(url_for('.index'))
+
     post = Post.query.get(id)
     db.session.delete(post)
     db.session.commit()

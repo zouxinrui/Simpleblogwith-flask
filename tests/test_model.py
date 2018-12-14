@@ -2,7 +2,7 @@ import unittest
 import time
 from datetime import datetime
 from app import create_app, db
-from app.models import User, Role, UserRole,Post
+from app.models import User, Role, UserRole,Post,Comment
 
 
 class ModelTestCase(unittest.TestCase):
@@ -60,7 +60,7 @@ class ModelTestCase(unittest.TestCase):
         user = User.query.filter_by(username='origin').first()
         self.assertIsNone(user)
 
-    def test_cascade_reaction(self):
+    def test_role_cascade_reaction(self):
         usr = User(username='test2', email='test2@qq.com')
         usr.set_password('test2')
         db.session.add(usr)
@@ -75,14 +75,46 @@ class ModelTestCase(unittest.TestCase):
         role = UserRole.query.filter_by(user_id=user.id).first()
         self.assertIsNone(role)
 
-    def test_post(self):
+    def test_post_cascade_reaction(self):
         post = Post(title='test2')
         post.timestamp =datetime.now()
         post.body='test message'
+        post.user_id = 1
         db.session.add(post)
         db.session.commit()
-        post = Post.query.filter_by(title='test2').first()
-        db.session.delete(post)
+        user = User.query.filter_by(id=1).first()
+        db.session.delete(user)
         db.session.commit()
+        post = Post.query.filter_by(title='test2').first()
+        self.assertIsNone(post)
+
+    def test_comment_cascade_reaction(self):
+        post = Post(title='test2')
+        post.timestamp =datetime.now()
+        post.body='test message'
+        post.user_id = 1
+        db.session.add(post)
+        db.session.commit()
+        comment = Comment(user_id=1,post_id=1)
+        comment.date=datetime.now()
+        comment.text='test'
+        db.session.add(comment)
+        db.session.commit()
+        # delete user first
+        user = User.query.filter_by(id=1).first()
+        db.session.delete(user)
+        db.session.commit()
+        # post is also deleted
+        post = Post.query.filter_by(title='test2').first()
+        self.assertIsNone(post)
+        # comment is also deleted
+        comment = Comment.query.filter_by(id=1).first()
+        self.assertIsNone(comment)
+
+
+
+
+
+
 
 

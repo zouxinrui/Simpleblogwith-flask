@@ -44,9 +44,9 @@ class DevelopmentConfig(Config):
         handler.setLevel(logging.INFO)
         handler.setFormatter(formatter)
         app.logger.addHandler(handler)
-    # logging.basicConfig(filename="logs/system.log",
-    #                     format='%(asctime)s - %(levelname)s - %(filename)s - %(message)s',
-    #                     level=logging.INFO)
+        logging.basicConfig(filename="logs/system.log",
+                        format='%(asctime)s - %(levelname)s - %(filename)s - %(message)s',
+                        level=logging.INFO)
 
 
 class TestingConfig(Config):

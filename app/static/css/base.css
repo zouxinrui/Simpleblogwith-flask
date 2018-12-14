@@ -29,7 +29,7 @@ i{font-style:normal;}
 a{color:#000;}
 a:hover{color:#F60;}
 a.under:link,a.under:active,a.under:visited,a.under:hover{text-decoration:underline;}
-/* 浮动 [flt加方向首个字母] */
+/* float */
 .fltL{float:left;}
 .fltR{float:right;}
 .fltN{float:none;}

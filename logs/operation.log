@@ -53,3 +53,12 @@
 2018-12-13 22:05:27,567 - INFO - [127.0.0.1]: "Xinrui_Jiu" logged out successfully
 2018-12-13 22:08:54,772 - INFO - [127.0.0.1]: "Xinrui_Jiu" logged in successfully
 2018-12-13 23:13:32,737 - INFO - [127.0.0.1]: "Xinrui_Jiu" logged in successfully
+2018-12-14 11:27:06,201 - INFO - [127.0.0.1]: "Xinrui_Jiu" logged in successfully
+2018-12-14 11:57:19,557 - INFO - [127.0.0.1]: Admin "Xinrui_Jiu" deleted the "Post:Report"
+2018-12-14 11:59:25,751 - INFO - [127.0.0.1]: "Xinrui_Jiu" has post a new post "Flask Admin"
+2018-12-14 11:59:54,432 - INFO - [127.0.0.1]: "Xinrui_Jiu" has commented on post "Flask Admin"
+2018-12-14 12:02:54,599 - WARNING - [127.0.0.1]: Admin "Xinrui_Jiu" deleted the "Model Comment: `1`",the related information may also be deleted
+2018-12-14 13:59:46,467 - INFO - [127.0.0.1]: Admin "Xinrui_Jiu" updated the "Post:Report"
+2018-12-14 14:00:02,575 - WARNING - [127.0.0.1]: Admin "Xinrui_Jiu" deleted the "Post:Report",the related information may also be deleted
+2018-12-14 14:00:13,443 - INFO - [127.0.0.1]: Admin "Xinrui_Jiu" updated the "Post:Report"
+2018-12-14 14:00:21,132 - WARNING - [127.0.0.1]: Admin "Xinrui_Jiu" deleted the "Post:Report",the related information may also be deleted

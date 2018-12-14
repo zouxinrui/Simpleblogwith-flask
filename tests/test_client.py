@@ -4,6 +4,7 @@ from flask import url_for
 from app import create_app, db
 from app.models import User, Role,UserRole, Post
 
+
 class FlaskClientTestCase(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
@@ -60,6 +61,7 @@ class FlaskClientTestCase(unittest.TestCase):
             'password2': '123456'},follow_redirects=True)
         self.assertTrue(re.search(b'Welcome to join', response.data))
 
+
     def test_login_and_logout(self):
         """Login Test with correct password"""
         response = self.client.post(("/login"), data={
@@ -69,6 +71,7 @@ class FlaskClientTestCase(unittest.TestCase):
         # only login successful can logout
         response_logout = self.client.get("/logout")
         self.assertTrue(response_logout.status_code == 302)
+
 
 class FlaskClientAuthorityTestCase(unittest.TestCase):
     @classmethod
@@ -108,17 +111,45 @@ class FlaskClientAuthorityTestCase(unittest.TestCase):
         cls.app_context.pop()
 
     def test_anou_authority(self):
+        """Operation without login"""
+        response = self.client.get("/")
+        self.assertTrue(response.status_code==200)
+
+        # enter user info page
+        response = self.client.get("/user/user/1")
+
+        self.assertTrue(response.status_code == 200)
+
         response = self.client.get(("/admin"))
         self.assertFalse(response.status_code == 200)
 
         response = self.client.get("/new_post")
         self.assertFalse(response.status_code == 200)
 
+        # edit profile
+        response = self.client.get("/edit_profile")
+        self.assertFalse(response.status_code == 200)
+
     def test_user_authority(self):
-        """Login Test with correct password"""
+        """Operate as a normal user"""
         response = self.client.post(("/login"), data={
             'username': 'user',
             'password': '123456'})
+        self.assertTrue(response.status_code == 302)
+        # edit profile
+        response = self.client.post(("/edit_profile"), data={
+            'username': 'user',
+            'about_me': 'nothing'})
+        self.assertTrue(response.status_code == 302)
+        # edit password
+        response = self.client.post(("/user/password"), data={
+            'password': '123456',
+            'password1': '123456',
+            'passwordnew': '345678'},follow_redirects=True)
+        self.assertTrue(b'Login' in response.data)
+        response = self.client.post(("/login"), data={
+            'username': 'user',
+            'password': '345678'})
         self.assertTrue(response.status_code == 302)
         # normal user access admin
         response = self.client.get(("/admin"))
@@ -130,6 +161,9 @@ class FlaskClientAuthorityTestCase(unittest.TestCase):
         response = self.client.post(("/new_post"), data={
             'title': 'testpost',
             'body': 'that was amazing'},follow_redirects=True)
+        self.client.post(("/new_post"), data={
+            'title': 'testpost2',
+            'body': 'that was amazing'}, follow_redirects=True)
         # admin user new post
         self.assertTrue(b'Create' in response.data)
         with self.app_context:
@@ -141,11 +175,25 @@ class FlaskClientAuthorityTestCase(unittest.TestCase):
                 "text" : "simple code"
             },follow_redirects=True)
             self.assertTrue(b'simple code' in response.data)
+        response = self.client.get("/edit/1")
+        self.assertTrue(response.status_code == 200)
+        #delete one of the post
+        response = self.client.get("/delete_post/2")
+        self.assertTrue(response.status_code == 302)
+        #logout to test edit and delete
         response_logout = self.client.get("/logout")
         self.assertTrue(response_logout.status_code == 302)
+       # After logout, cannot access this page
+        response = self.client.get("/edit/1")
+        self.assertFalse(response.status_code == 200)
+       # Try to delete without authority
+        response = self.client.get("/delete_post/1")
+        self.assertFalse(response.status_code == 200)
+
+
 
     def test_admin_authority(self):
-        """Login Test with correct password"""
+        """operate as an admin"""
         response = self.client.post(("/login"), data={
             'username': 'admin',
             'password': '123456'})

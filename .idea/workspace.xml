@@ -2,37 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="275677b3-d46a-4f59-a182-016cf4384359" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/css/print.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/print.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/benjamin.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/cole-keister-1153437-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/cole-keister-1153440-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/cole-keister-1153445-unsplash.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/frame.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/img_0568.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/static/img/sweet-ice-cream.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/img/sweet-ice-cream.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base/500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/modelview.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/modelview.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/static/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/static/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/base/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/base/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/post/edit_post .html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post/edit_post .html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/post/new_post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post/new_post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/post/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/post/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/post/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/user/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/data.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/operation.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/operation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_5ukm88wszzbpr28r.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_9xdzmcvgmfbkgvre.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_eo9fdvbuidp3lp9o.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_kv7qoqqr71fjikum.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_viv5av9vhfzvd8df.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_x4v6l9hdf5zzm8x9.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_z3ls3ct7t9m5smcy.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/_MAIN_75.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/test.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/whoosh_index/Post/MAIN_dl2zk862laoc0ok0.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/whoosh_index/Post/MAIN_hp4ke345h97yzr3l.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/whoosh_index/Post/_MAIN_18.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_28rviipea0fwurb2.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_h3ocxef7sx73p83c.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_i3oqk73azbvysds2.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_lcc8fygx9pve5g84.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_ns9arr777soq9ck1.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_qbz7q8jvcwkmgg75.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_tjrrnur0hz4g7v6f.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/MAIN_y26lbsis07egotqi.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/Post/_MAIN_97.toc" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,35 +73,36 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.16" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
-          <entry key="html" value="8" />
-          <entry key="py" value="3" />
+          <entry key="css" value="2" />
+          <entry key="html" value="11" />
+          <entry key="py" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
-          <entry key="HTML" value="8" />
-          <entry key="Python" value="3" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="11" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="90" />
-          <entry key="html" value="502" />
-          <entry key="py" value="11" />
+          <entry key="css" value="95" />
+          <entry key="html" value="529" />
+          <entry key="py" value="1502" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="90" />
-          <entry key="HTML" value="502" />
-          <entry key="Python" value="11" />
+          <entry key="CSS" value="95" />
+          <entry key="HTML" value="529" />
+          <entry key="Python" value="1502" />
         </counts>
       </usages-collector>
     </session>
@@ -117,91 +110,112 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/post/edit_post .html">
+        <entry file="file://$PROJECT_DIR$/app/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140">
-              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+            <state relative-caret-position="-38">
+              <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/user/edit_profile.html">
+        <entry file="file://$PROJECT_DIR$/tests/test_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="290">
+              <caret line="190" column="53" lean-forward="true" selection-start-line="190" selection-start-column="53" selection-end-line="190" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/user/login.html">
+        <entry file="file://$PROJECT_DIR$/app/static/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/base/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1494">
-              <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/base/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+            <state relative-caret-position="133">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/templates/post/new_post.html">
+        <entry file="file://$PROJECT_DIR$/app/templates/base/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state relative-caret-position="271">
+              <caret line="87" column="85" lean-forward="true" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="85" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/user/register.html">
+        <entry file="file://$PROJECT_DIR$/app/main/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+            <state relative-caret-position="1064">
+              <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#95#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/post/search_results.html">
+        <entry file="file://$PROJECT_DIR$/app/main/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="28" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="28" />
+            <state relative-caret-position="-723">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#835#1725#0" />
+                <element signature="e#1790#2826#0" />
+                <element signature="e#2870#3579#0" />
+                <element signature="e#3625#3668#0" />
+                <element signature="e#3741#4946#0" />
+                <element signature="e#5038#5805#0" />
+                <element signature="e#5882#6176#0" />
+                <element signature="e#6273#7197#0" />
+                <element signature="e#7286#8051#0" />
+                <element signature="e#9279#9901#0" />
+                <element signature="e#9597#10033#0" />
+                <element signature="e#10114#11384#0" />
+                <element signature="e#11466#11884#0" />
+                <element signature="e#11915#12046#0" />
+                <element signature="e#12124#13246#0" />
+                <element signature="e#13308#13459#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/css/print.css">
+        <entry file="file://$PROJECT_DIR$/tests/test_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            <state relative-caret-position="-1292">
+              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/post/post.html">
+        <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
-              <caret line="47" selection-start-line="47" selection-end-line="48" />
+            <state relative-caret-position="74">
+              <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
@@ -244,19 +258,13 @@
         <option value="$PROJECT_DIR$/app/templates/admin/base.html" />
         <option value="$PROJECT_DIR$/app/templates/post/search_results.html" />
         <option value="$PROJECT_DIR$/app/main/__init__.py" />
-        <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/tests/test_login.py" />
         <option value="$PROJECT_DIR$/app/main/forms.py" />
-        <option value="$PROJECT_DIR$/config.py" />
         <option value="$PROJECT_DIR$/tests/test_user_model.py" />
-        <option value="$PROJECT_DIR$/tests/test_client.py" />
-        <option value="$PROJECT_DIR$/tests/test_model.py" />
-        <option value="$PROJECT_DIR$/app/modelview.py" />
         <option value="$PROJECT_DIR$/app/templates/user/pawedit.html" />
         <option value="$PROJECT_DIR$/app/templates/user/user.html" />
         <option value="$PROJECT_DIR$/app/templates/admin/welcom.html" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
-        <option value="$PROJECT_DIR$/app/main/views.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/app/templates/post/tags.html" />
         <option value="$PROJECT_DIR$/app/static/css/print.css" />
@@ -264,9 +272,16 @@
         <option value="$PROJECT_DIR$/app/templates/user/register.html" />
         <option value="$PROJECT_DIR$/app/templates/post/edit_post .html" />
         <option value="$PROJECT_DIR$/app/templates/post/new_post.html" />
-        <option value="$PROJECT_DIR$/app/templates/base/base.html" />
         <option value="$PROJECT_DIR$/app/templates/base/index.html" />
         <option value="$PROJECT_DIR$/app/templates/post/post.html" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/app/modelview.py" />
+        <option value="$PROJECT_DIR$/app/main/views.py" />
+        <option value="$PROJECT_DIR$/tests/test_model.py" />
+        <option value="$PROJECT_DIR$/tests/test_client.py" />
+        <option value="$PROJECT_DIR$/manage.py" />
+        <option value="$PROJECT_DIR$/app/static/css/base.css" />
+        <option value="$PROJECT_DIR$/app/templates/base/base.html" />
       </list>
     </option>
   </component>
@@ -295,49 +310,7 @@
             <path>
               <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
               <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Xinrui_Zou" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Xinrui_Zou" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,22 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for test_model.ModelTestCase">
-    <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="flasky-first-edition-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_client.FlaskClientAuthorityTestCase.test_search&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority">
     <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="flasky-first-edition-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -389,21 +347,6 @@
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_client.FlaskClientAuthorityTestCase.test_user_authority&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_client.FlaskClientTestCase" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="flasky-first-edition-master" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_client.FlaskClientTestCase&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -422,7 +365,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_model.UserModelTestCase.test_post" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_model.ModelTestCase.test_comment_cascade_reaction.test_tag_cascade_reaction" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="flasky-first-edition-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -433,24 +376,54 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_model.UserModelTestCase.test_post&quot;" />
+      <option name="_new_target" value="&quot;test_model.ModelTestCase.test_comment_cascade_reaction.test_tag_cascade_reaction&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_model.ModelTestCase.test_post" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="flasky-first-edition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_model.ModelTestCase.test_post&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_model.ModelTestCase.test_tag_cascade_reaction" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="flasky-first-edition-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_model.ModelTestCase.test_tag_cascade_reaction&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" />
-      <item itemvalue="Python tests.pytest for test_client.FlaskClientTestCase" />
-      <item itemvalue="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_search" />
-      <item itemvalue="Python tests.pytest for test_model.UserModelTestCase.test_post" />
+      <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_comment_cascade_reaction.test_tag_cascade_reaction" />
+      <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_tag_cascade_reaction" />
       <item itemvalue="Python tests.pytest for test_model.ModelTestCase" />
+      <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_post" />
+      <item itemvalue="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for test_model.ModelTestCase" />
-        <item itemvalue="Python tests.pytest for test_model.UserModelTestCase.test_post" />
-        <item itemvalue="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_search" />
-        <item itemvalue="Python tests.pytest for test_client.FlaskClientTestCase" />
         <item itemvalue="Python tests.pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" />
+        <item itemvalue="Python tests.pytest for test_model.ModelTestCase" />
+        <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_post" />
+        <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_tag_cascade_reaction" />
+        <item itemvalue="Python tests.pytest for test_model.ModelTestCase.test_comment_cascade_reaction.test_tag_cascade_reaction" />
       </list>
     </recent_temporary>
   </component>
@@ -468,51 +441,52 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 27m 51s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
+    <history-entry file="pytest_for_test_model_ModelTestCase_test_post - 2018.12.14 at 14h 01m 18s.xml">
+      <configuration name="pytest for test_model.ModelTestCase.test_post" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 29m 56s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
+    <history-entry file="pytest_for_test_model_ModelTestCase_test_post - 2018.12.14 at 14h 01m 48s.xml">
+      <configuration name="pytest for test_model.ModelTestCase.test_post" configurationId="tests" />
     </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 30m 29s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 31m 08s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 31m 38s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 31m 48s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_search - 2018.12.13 at 14h 32m 32s.xml">
-      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_model_UserModelTestCase_test_post - 2018.12.13 at 15h 27m 09s.xml">
-      <configuration name="pytest for test_model.UserModelTestCase.test_post" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_model_UserModelTestCase_test_post - 2018.12.13 at 15h 28m 30s.xml">
-      <configuration name="pytest for test_model.UserModelTestCase.test_post" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_for_test_model_ModelTestCase - 2018.12.13 at 15h 28m 59s.xml">
+    <history-entry file="pytest_for_test_model_ModelTestCase - 2018.12.14 at 14h 02m 26s.xml">
       <configuration name="pytest for test_model.ModelTestCase" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 11m 10s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 16m 30s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 17m 23s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 18m 43s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 19m 11s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 24m 04s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_for_test_client_FlaskClientAuthorityTestCase_test_user_authority - 2018.12.14 at 14h 24m 49s.xml">
+      <configuration name="pytest for test_client.FlaskClientAuthorityTestCase.test_user_authority" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24107143" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24107143" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.6770833" visible="true" weight="0.60229135" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.6770833" visible="true" weight="0.12765957" />
       <window_info anchor="bottom" id="Version Control" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.32291666" side_tool="true" weight="0.84313726" />
       <window_info anchor="bottom" id="Python Console" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.69717264" weight="0.011437909" />
+      <window_info anchor="bottom" id="Run" order="7" sideWeight="0.69717264" weight="0.7561375" />
       <window_info anchor="bottom" id="Debug" order="8" sideWeight="0.4985119" weight="0.8316994" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
@@ -585,9 +559,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_api.py" />
-    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/exceptions.py" />
     <entry file="file://$PROJECT_DIR$/test.sqlite">
       <provider selected="true" editor-type-id="text-editor">
@@ -596,41 +567,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_selenium.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_login.py" />
-    <entry file="file://$PROJECT_DIR$/app/main/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="847">
-          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#95#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_basics.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="23" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="15" column="46" lean-forward="true" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/modelview.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="48" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -655,36 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/main/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="320" column="45" lean-forward="true" selection-start-line="320" selection-start-column="45" selection-end-line="320" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/post/tags.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -692,27 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/app/templates/post/edit_post .html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1028">
-          <caret line="68" column="37" lean-forward="true" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="59" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/print.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+        <state relative-caret-position="399">
+          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -723,31 +616,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="87" column="27" selection-start-line="87" selection-start-column="27" selection-end-line="87" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/base/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="646">
           <caret line="34" column="49" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/user/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/user/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -758,16 +630,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/post/edit_post .html">
+    <entry file="file://$PROJECT_DIR$/app/static/css/print.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
+        <state relative-caret-position="2337">
+          <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/post/post.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
+        <state relative-caret-position="893">
           <caret line="47" selection-start-line="47" selection-end-line="48" />
         </state>
       </provider>
@@ -776,6 +648,138 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="66" selection-start-line="42" selection-start-column="66" selection-end-line="42" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modelview.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tmp/coverage/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="190" column="53" lean-forward="true" selection-start-line="190" selection-start-column="53" selection-end-line="190" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="64" column="36" lean-forward="true" selection-start-line="64" selection-start-column="36" selection-end-line="64" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1292">
+          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-723">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#835#1725#0" />
+            <element signature="e#1790#2826#0" />
+            <element signature="e#2870#3579#0" />
+            <element signature="e#3625#3668#0" />
+            <element signature="e#3741#4946#0" />
+            <element signature="e#5038#5805#0" />
+            <element signature="e#5882#6176#0" />
+            <element signature="e#6273#7197#0" />
+            <element signature="e#7286#8051#0" />
+            <element signature="e#9279#9901#0" />
+            <element signature="e#9597#10033#0" />
+            <element signature="e#10114#11384#0" />
+            <element signature="e#11466#11884#0" />
+            <element signature="e#11915#12046#0" />
+            <element signature="e#12124#13246#0" />
+            <element signature="e#13308#13459#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1064">
+          <caret line="56" column="17" lean-forward="true" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#95#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="87" column="85" lean-forward="true" selection-start-line="87" selection-start-column="7" selection-end-line="87" selection-end-column="85" />
         </state>
       </provider>
     </entry>
